@@ -1,0 +1,6 @@
+{
+  "name": "Seep Media",
+  "description": "Your space for inspiration. Immersive AI-driven creative tools for characters, products, and worlds.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

@@ -1,0 +1,238 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A cinematic universe project container.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "genre": { "type": "string" },
+        "tone": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "userId"]
+    },
+    "Character": {
+      "title": "Character",
+      "description": "A detailed persistent cinematic character.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "name": { "type": "string" },
+        "age": { "type": "string" },
+        "species": { "type": "string" },
+        "height": { "type": "string" },
+        "bodyType": { "type": "string" },
+        "faceStructure": { "type": "string" },
+        "eyeColor": { "type": "string" },
+        "skinTexture": { "type": "string" },
+        "hairstyle": { "type": "string" },
+        "voice": { "type": "string" },
+        "archetype": { "type": "string" },
+        "traits": { "type": "array", "items": { "type": "string" } },
+        "clothing": { "type": "string" },
+        "movementStyle": { "type": "string" },
+        "routines": { "type": "array", "items": { "type": "string" } },
+        "habits": { "type": "array", "items": { "type": "string" } },
+        "contradictions": { "type": "string" },
+        "copingMechanisms": { "type": "string" },
+        "hiddenDreams": { "type": "string" },
+        "nostalgicObjects": { "type": "array", "items": { "type": "string" } },
+        "emotionalTriggers": { "type": "array", "items": { "type": "string" } },
+        "emotionalWound": { "type": "string" },
+        "fear": { "type": "string" },
+        "desire": { "type": "string" },
+        "vulnerability": { "type": "string" },
+        "mask": { "type": "string" },
+        "truth": { "type": "string" },
+        "secret": { "type": "string" },
+        "copingMechanisms": { "type": "string" },
+        "relationalPattern": { "type": "string" },
+        "lonelinessType": { "type": "string" },
+        "philosophy": { "type": "string" },
+        "secretNeed": { "type": "string" },
+        "emotionalArc": { "type": "string" },
+        "visualPrompt": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "name", "userId"]
+    },
+    "Environment": {
+      "title": "Environment",
+      "description": "A detailed persistent cinematic environment.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "name": { "type": "string" },
+        "architecture": { "type": "string" },
+        "lighting": { "type": "string" },
+        "weather": { "type": "string" },
+        "mood": { "type": "string" },
+        "colorPalette": { "type": "array", "items": { "type": "string" } },
+        "soundscape": { "type": "string" },
+        "details": { "type": "string" },
+        "timeOfDay": { "type": "string" },
+        "atmosphere": { "type": "string" },
+        "visualPrompt": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "name", "userId"]
+    },
+    "Object": {
+      "title": "Object",
+      "description": "A detailed persistent cinematic object or prop.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "dimensions": { "type": "string" },
+        "material": { "type": "string" },
+        "texture": { "type": "string" },
+        "wearState": { "type": "string" },
+        "functionality": { "type": "string" },
+        "symbolism": { "type": "string" },
+        "emotionalSignificance": { "type": "string" },
+        "owner": { "type": "string" },
+        "visualPrompt": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "name", "userId"]
+    },
+    "StoryBeat": {
+      "title": "Story Beat",
+      "description": "A continuity tracking element for story memory.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "timelinePosition": { "type": "number" },
+        "emotionalChanges": { "type": "string" },
+        "unresolvedTensions": { "type": "string" },
+        "motifs": { "type": "array", "items": { "type": "string" } },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "title", "userId"]
+    },
+    "Relationship": {
+      "title": "Relationship",
+      "description": "Tracking emotional dynamics between characters.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "characterA": { "type": "string" },
+        "characterB": { "type": "string" },
+        "status": { "type": "string" },
+        "trust": { "type": "number" },
+        "intimacy": { "type": "number" },
+        "tension": { "type": "number" },
+        "dependency": { "type": "number" },
+        "unspokenFeeling": { "type": "string" },
+        "powerDynamic": { "type": "string" },
+        "history": { "type": "string" },
+        "whyThem": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "characterA", "characterB", "userId"]
+    },
+    "CinematicStyle": {
+      "title": "Cinematic Style",
+      "description": "Visual language and camera memory.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "cinematography": { "type": "string" },
+        "colorGrading": { "type": "string" },
+        "pacing": { "type": "string" },
+        "cameraLenses": { "type": "array", "items": { "type": "string" } },
+        "shotCompositions": { "type": "array", "items": { "type": "string" } },
+        "movementPatterns": { "type": "array", "items": { "type": "string" } },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "userId"]
+    },
+    "Scene": {
+      "title": "Scene",
+      "description": "A production scene output.",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "number": { "type": "number" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "dialogue": { "type": "string" },
+        "action": { "type": "string" },
+        "visualPrompt": { "type": "string" },
+        "characterIds": { "type": "array", "items": { "type": "string" } },
+        "environmentId": { "type": "string" },
+        "objectIds": { "type": "array", "items": { "type": "string" } },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["projectId", "number", "userId"]
+    },
+    "Workflow": {
+      "title": "Workflow",
+      "description": "A production workflow container.",
+      "type": "object",
+      "properties": {
+        "projectName": { "type": "string" },
+        "script": { "type": "string" },
+        "scenes": { "type": "array" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId"]
+    }
+  },
+  "firestore": {
+    "/workflows/{workflowId}": {
+      "schema": "Workflow",
+      "description": "User production workflows."
+    },
+    "/projects/{projectId}": {
+      "schema": "Project",
+      "description": "Cinematic universe projects."
+    },
+    "/projects/{projectId}/characters/{characterId}": {
+      "schema": "Character",
+      "description": "Characters in a project."
+    },
+    "/projects/{projectId}/environments/{envId}": {
+      "schema": "Environment",
+      "description": "Environments in a project."
+    },
+    "/projects/{projectId}/objects/{objId}": {
+      "schema": "Object",
+      "description": "Objects/Props in a project."
+    },
+    "/projects/{projectId}/storyBeats/{beatId}": {
+      "schema": "StoryBeat",
+      "description": "Story continuity beats."
+    },
+    "/projects/{projectId}/relationships/{relId}": {
+      "schema": "Relationship",
+      "description": "Relationships between characters."
+    },
+    "/projects/{projectId}/cinematicStyles/{styleId}": {
+      "schema": "CinematicStyle",
+      "description": "Cinematic style definitions."
+    },
+    "/projects/{projectId}/scenes/{sceneId}": {
+      "schema": "Scene",
+      "description": "Generated production scenes."
+    }
+  }
+}
